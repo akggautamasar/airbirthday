@@ -341,23 +341,6 @@ body {
   cursor: pointer;
 }
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
-body {
-    font-size: 15px;
-    color: #404040;
-    font-family: Montserrat, sans-serif;
-    background-image: linear-gradient(to bottom right, #ff9eaa 0% 65%, #e860ff 95% 100%);
-    background-position: center;
-    background-attachment: fixed;
-    margin: 0;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-    display: grid;
-    place-items: center;
-    box-sizing: border-box;
-}
-
 .card {
     background-color: #fff;
     max-width: 360px;
