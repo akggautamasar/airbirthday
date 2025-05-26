@@ -9,6 +9,16 @@
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="style/style.css">
+  <style>
+    /* Inline styles for music controls container */
+    .music-controls {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
 <body>
@@ -31,12 +41,9 @@
     <div class="five">
       <p class="idea-1">That's what I was going to do.</p>
       <p class="idea-2">But then I stopped.</p>
-      <p class="idea-3">I realised, I wanted to do something
-        <strong>special</strong>.</p>
+      <p class="idea-3">I realised, I wanted to do something <strong>special</strong>.</p>
       <p class="idea-4">Because,</p>
-      <p class="idea-5">You are Special
-        <span>:)</span>
-      </p>
+      <p class="idea-5">You are Special <span>:)</span></p>
       <p class="idea-6">
         <span>S</span>
         <span>O</span>
@@ -52,17 +59,19 @@
     </div>
     <div class="seven">
       <div class="baloons">
-        <!-- Balloons repeated -->
+        <!-- Repeated balloons -->
         <img src="img/ballon2.svg" alt="">
-        <!-- more balloons... -->
+        <img src="img/ballon1.svg" alt="">
+        <img src="img/ballon3.svg" alt="">
+        <!-- more balloon images as needed -->
       </div>
     </div>
     <div class="eight">
-      <!-- Circles repeated -->
+      <!-- Repeated SVG circles -->
       <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
         <circle cx="20" cy="20" r="20" />
       </svg>
-      <!-- more circles... -->
+      <!-- more circles as needed -->
     </div>
     <div class="nine">
       <p>Okay, now come back and tell me if you liked it.</p>
@@ -76,22 +85,23 @@
     Your browser does not support the audio element.
   </audio>
 
-  <!-- Play button shown at the start -->
-  <button id="start-music">Play Music</button>
-
-  <!-- Made with ❤️ by AIR moved here -->
-  <div class="desc link">
-    <a href="https://github.com/akggautamasar">Made with <span class="love">❤️</span> by AIR</a>
+  <!-- Music Controls Container -->
+  <div class="music-controls">
+    <!-- Play button shown at the start -->
+    <button id="start-music">Play Music</button>
+    
+    <!-- Made with ❤️ by AIR section (now placed directly above toggle button) -->
+    <div class="desc link">
+      <a href="https://github.com/akggautamasar">Made with <span class="love">❤️</span> by AIR</a>
+    </div>
+    
+    <!-- Mute/Unmute toggle shown after music starts -->
+    <button id="toggle-mute" style="display: none;">Mute Music</button>
   </div>
 
-  <!-- Mute/Unmute toggle shown after music starts -->
-  <button id="toggle-mute" style="display: none;">Mute Music</button>
-
-  <!-- Scripts -->
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
   <script type="text/babel" src="script/main.js"></script>
-
   <script>
     const music = document.getElementById('bg-music');
     const startButton = document.getElementById('start-music');
