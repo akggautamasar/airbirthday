@@ -1,7 +1,7 @@
 <h1 align="center">Happy Birthday!!! 🔥</h1> 
 
 <p align="center">
-<a href="https://github.com/akggautamasar/"><img alt="author" src="https://img.shields.io/badge/author-Sawan%20Kumar-red"/></a>
+<a href="https://github.com/akggautamasar/"><img alt="author" src="https://img.shields.io/badge/author-Akggautam%20Air-red"/></a>
 <a href="https://github.com/ellerbrock/open-source-badges/"><img alt="author" src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"/></a>
 </p>
 
